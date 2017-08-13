@@ -29,7 +29,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("EncuestasModel", "FK_Poblado_Provincia", "Provincia", global::System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(EncuestasC.Models.Provinciax), "Poblado", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(EncuestasC.Models.Pobladox))]
 
 // Nombre de archivo original:
-// Fecha de generación: 09/08/2017 19:27:28
+// Fecha de generación: 12/08/2017 22:13:24
 namespace EncuestasC.Models
 {
     

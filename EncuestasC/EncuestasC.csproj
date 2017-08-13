@@ -90,6 +90,7 @@
       <DependentUpon>Encuestas.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="Views\Home\BCanton.aspx" />
     <Content Include="Views\Home\Create.aspx" />
     <Content Include="Views\Home\DCanton.aspx" />
     <Content Include="Views\Home\DCodPres.aspx" />
@@ -102,6 +103,7 @@
     <Content Include="Views\Home\DProvincia.aspx" />
     <Content Include="Views\Home\DProyecto.aspx" />
     <Content Include="Views\Home\DTelefono.aspx" />
+    <Content Include="Views\Home\ECanton.aspx" />
     <Content Include="Views\Home\Edit.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config">

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EncuestasModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+    <Schema Namespace="EncuestasModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
         <EntityContainer Name="EncuestasModelStoreContainer">
           <EntitySet Name="Canton" EntityType="EncuestasModel.Store.Canton" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="CodigoPresupuestario" EntityType="EncuestasModel.Store.CodigoPresupuestario" store:Type="Tables" Schema="dbo" />
@@ -172,7 +172,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="numeric" Nullable="false" Precision="2" />
+          <Property Name="Id" Type="numeric" Nullable="false" Precision="2" StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Proyecto">
@@ -417,8 +417,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EncuestasModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
@@ -1015,22 +1014,22 @@
         <EntityTypeShape EntityType="EncuestasModel.Telefonox" Width="1.5" PointX="7.5" PointY="7.875" Height="1.7879850260416674" IsExpanded="true" />
         <AssociationConnector Association="EncuestasModel.FK_Canton_Provincia" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="5.4612939453125" />
-          <ConnectorPoint PointX="2.4166666666666665" PointY="5.4612939453124989" />
-          <ConnectorPoint PointX="2.5833333333333335" PointY="5.4612939453125" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="5.4612939453124989" />
+          <ConnectorPoint PointX="2.7708333333333335" PointY="5.4612939453125" />
           <ConnectorPoint PointX="3" PointY="5.4612939453125" />
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_CPSP_Canton" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="5.4612939453125" />
-          <ConnectorPoint PointX="4.666666666666667" PointY="5.4612939453124989" />
-          <ConnectorPoint PointX="4.833333333333333" PointY="5.4612939453125" />
-          <ConnectorPoint PointX="5.25" PointY="5.4612939453125" />
+          <ConnectorPoint PointX="4.5" PointY="5.3651432291666667" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="5.3651432291666659" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="5.3651432291666667" />
+          <ConnectorPoint PointX="5.25" PointY="5.3651432291666667" />
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Distrito_Canton" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="4.8868949726562505" />
-          <ConnectorPoint PointX="4.666666666666667" PointY="4.88689497265625" />
-          <ConnectorPoint PointX="4.833333333333333" PointY="4.8868949726562505" />
-          <ConnectorPoint PointX="5" PointY="4.8868949726562505" />
-          <ConnectorPoint PointX="5" PointY="3.875" />
+          <ConnectorPoint PointX="4.5" PointY="4.8388196145833335" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="4.8388196145833327" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="4.8388196145833335" />
+          <ConnectorPoint PointX="5.125" PointY="4.8388196145833335" />
+          <ConnectorPoint PointX="5.125" PointY="3.875" />
           <ConnectorPoint PointX="5.916666666666667" PointY="3.8749999999999996" />
           <ConnectorPoint PointX="6.083333333333333" PointY="3.875" />
           <ConnectorPoint PointX="7.760416666666667" PointY="3.8749999999999996" />
@@ -1039,15 +1038,17 @@
           <ConnectorPoint PointX="9" PointY="4.375" />
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Poblado_Canton" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="6.0356929179687491" />
-          <ConnectorPoint PointX="4.75" PointY="6.0356929179687491" />
-          <ConnectorPoint PointX="4.75" PointY="3.5" />
-          <ConnectorPoint PointX="5.916666666666667" PointY="3.4999999999999996" />
-          <ConnectorPoint PointX="6.083333333333333" PointY="3.5" />
-          <ConnectorPoint PointX="7.760416666666667" PointY="3.4999999999999996" />
-          <ConnectorPoint PointX="7.927083333333333" PointY="3.5" />
-          <ConnectorPoint PointX="14.25" PointY="3.5" />
-          <ConnectorPoint PointX="14.25" PointY="4.375" />
+          <ConnectorPoint PointX="4.5" PointY="5.987617559895833" />
+          <ConnectorPoint PointX="5" PointY="5.987617559895833" />
+          <ConnectorPoint PointX="5" PointY="3.625" />
+          <ConnectorPoint PointX="5.916666666666667" PointY="3.6249999999999996" />
+          <ConnectorPoint PointX="6.083333333333333" PointY="3.625" />
+          <ConnectorPoint PointX="7.760416666666667" PointY="3.6249999999999996" />
+          <ConnectorPoint PointX="7.927083333333333" PointY="3.625" />
+          <ConnectorPoint PointX="14.065103666666667" PointY="3.6249999999999996" />
+          <ConnectorPoint PointX="14.231770333333335" PointY="3.625" />
+          <ConnectorPoint PointX="14.453126000000001" PointY="3.625" />
+          <ConnectorPoint PointX="14.453126000000001" PointY="4.375" />
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Encuesta_CodigoPresupuestario" ManuallyRouted="false">
           <ConnectorPoint PointX="9.90625" PointY="11.125" />
@@ -1104,17 +1105,15 @@
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Distrito_Provincia" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="4.8868949726562487" />
-          <ConnectorPoint PointX="2.4166666666666665" PointY="4.8868949726562478" />
-          <ConnectorPoint PointX="2.5833333333333335" PointY="4.8868949726562487" />
           <ConnectorPoint PointX="2.75" PointY="4.8868949726562487" />
-          <ConnectorPoint PointX="2.75" PointY="4" />
-          <ConnectorPoint PointX="4.666666666666667" PointY="3.9999999999999996" />
-          <ConnectorPoint PointX="4.833333333333333" PointY="4" />
-          <ConnectorPoint PointX="4.916666666666667" PointY="3.9999999999999996" />
-          <ConnectorPoint PointX="5.083333333333333" PointY="4" />
-          <ConnectorPoint PointX="5.916666666666667" PointY="3.9999999999999996" />
-          <ConnectorPoint PointX="6.083333333333333" PointY="4" />
-          <ConnectorPoint PointX="8.593748" PointY="4" />
+          <ConnectorPoint PointX="2.75" PointY="3.859375" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="3.8593749999999996" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="3.859375" />
+          <ConnectorPoint PointX="5.916666666666667" PointY="3.8593749999999996" />
+          <ConnectorPoint PointX="6.083333333333333" PointY="3.859375" />
+          <ConnectorPoint PointX="7.760416666666667" PointY="3.8593749999999996" />
+          <ConnectorPoint PointX="7.927083333333333" PointY="3.859375" />
+          <ConnectorPoint PointX="8.593748" PointY="3.859375" />
           <ConnectorPoint PointX="8.593748" PointY="4.375" />
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Poblado_Distrito" ManuallyRouted="false">
@@ -1127,6 +1126,8 @@
         <AssociationConnector Association="EncuestasModel.FK_Encuesta_Email" ManuallyRouted="false">
           <ConnectorPoint PointX="7.84375" PointY="3.1052864583333317" />
           <ConnectorPoint PointX="7.84375" PointY="4.0781224999999992" />
+          <ConnectorPoint PointX="8.5104146666666658" PointY="4.0781224999999983" />
+          <ConnectorPoint PointX="8.6770813333333336" PointY="4.0781224999999992" />
           <ConnectorPoint PointX="8.9166666666666661" PointY="4.0781224999999983" />
           <ConnectorPoint PointX="9.0833333333333339" PointY="4.0781224999999992" />
           <ConnectorPoint PointX="10.416666666666666" PointY="4.0781224999999983" />
@@ -1154,18 +1155,14 @@
         </AssociationConnector>
         <AssociationConnector Association="EncuestasModel.FK_Poblado_Provincia" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="6.00444091796875" />
-          <ConnectorPoint PointX="2.5" PointY="6.00444091796875" />
-          <ConnectorPoint PointX="2.5" PointY="3.625" />
-          <ConnectorPoint PointX="4.666666666666667" PointY="3.6249999999999996" />
-          <ConnectorPoint PointX="4.833333333333333" PointY="3.625" />
-          <ConnectorPoint PointX="5.916666666666667" PointY="3.6249999999999996" />
-          <ConnectorPoint PointX="6.083333333333333" PointY="3.625" />
-          <ConnectorPoint PointX="7.760416666666667" PointY="3.6249999999999996" />
-          <ConnectorPoint PointX="7.927083333333333" PointY="3.625" />
-          <ConnectorPoint PointX="14.166666666666666" PointY="3.6249999999999996" />
-          <ConnectorPoint PointX="14.333333333333334" PointY="3.625" />
-          <ConnectorPoint PointX="14.656252" PointY="3.625" />
-          <ConnectorPoint PointX="14.656252" PointY="4.375" />
+          <ConnectorPoint PointX="2.6875" PointY="6.00444091796875" />
+          <ConnectorPoint PointX="2.6875" PointY="3.5" />
+          <ConnectorPoint PointX="5.916666666666667" PointY="3.4999999999999996" />
+          <ConnectorPoint PointX="6.083333333333333" PointY="3.5" />
+          <ConnectorPoint PointX="7.760416666666667" PointY="3.4999999999999996" />
+          <ConnectorPoint PointX="7.927083333333333" PointY="3.5" />
+          <ConnectorPoint PointX="14.148437000000001" PointY="3.5" />
+          <ConnectorPoint PointX="14.148437000000001" PointY="4.375" />
         </AssociationConnector>
       </Diagram>
     </Diagrams>

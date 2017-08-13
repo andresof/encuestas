@@ -23,9 +23,8 @@
     
         <tr>
             <td>
-                <%= Html.ActionLink("Edit", "Edit", new { id=item.Id }) %> |
-                <%= Html.ActionLink("Details", "Details", new { id=item.Id })%> |
-                <%= Html.ActionLink("Delete", "Delete", new { id=item.Id })%>
+                <%= Html.ActionLink("Editar", "ECanton", new { id=item.Id }) %> |
+                <%= Html.ActionLink("Eliminar", "BCanton", new { id=item.Id })%>
             </td>
             <td>
                 <%= Html.Encode(String.Format("{0:F}", item.Id)) %>
@@ -40,7 +39,7 @@
     </table>
 
     <p>
-        <%= Html.ActionLink("Create New", "Create") %>
+        <%= Html.ActionLink("Crear Registro", "CCanton") %>
     </p>
 
 </asp:Content>
